@@ -14,12 +14,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2884223652305538451, guid: 7b6d45709358ea24fa2bb03a866ca5b9, type: 3}
       propertyPath: m_Name
-      value: Snow-Rock-2 Variant
+      value: SnowRockSmall
       objectReference: {fileID: 0}
     - target: {fileID: 3110391993549806314, guid: 7b6d45709358ea24fa2bb03a866ca5b9, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 782898472e8b7f04882fa078978a476e, type: 3}
+    - target: {fileID: 3110391993549806314, guid: 7b6d45709358ea24fa2bb03a866ca5b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8698627822025117270, guid: 7b6d45709358ea24fa2bb03a866ca5b9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

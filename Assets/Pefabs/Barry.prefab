@@ -5624,6 +5624,7 @@ GameObject:
   - component: {fileID: 871475946969925788}
   - component: {fileID: 3436727106937946871}
   - component: {fileID: 4125637694737630957}
+  - component: {fileID: 2979498191435681547}
   m_Layer: 0
   m_Name: Peguin
   m_TagString: Untagged
@@ -5723,6 +5724,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2979498191435681547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7565422048220951557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa22a99ea6880f0468668a3721719510, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  countdownTime: 30
 --- !u!1 &7603746670983379448
 GameObject:
   m_ObjectHideFlags: 0
@@ -10780,7 +10794,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7251879486380165639, guid: c2f6a8962aac3814aa56cb9647c93470, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7734368496949923242, guid: c2f6a8962aac3814aa56cb9647c93470, type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

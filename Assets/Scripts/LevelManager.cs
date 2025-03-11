@@ -7,9 +7,8 @@ public class LevelManager : MonoBehaviour
     [SerializeField]
     float sceneLoadDelay = 2f;
 
-    void Awake()
-    {
-    }
+    void Awake() { }
+
     public void LoadGame()
     {
         SceneManager.LoadScene("Round1");
@@ -24,6 +23,7 @@ public class LevelManager : MonoBehaviour
     {
         StartCoroutine(WaitAndLoad("Over", sceneLoadDelay));
     }
+
     public void LoadRounds()
     {
         SceneManager.LoadScene("RoundList");

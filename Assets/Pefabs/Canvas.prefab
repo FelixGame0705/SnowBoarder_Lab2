@@ -423,6 +423,9 @@ MonoBehaviour:
   fullEnergyColor: {r: 0, g: 1, b: 0, a: 1}
   lowEnergyColor: {r: 1, g: 0, b: 0, a: 1}
   lowEnergyThreshold: 0.3
+  animateWhenBoosting: 1
+  pulseSpeed: 2
+  pulseAmount: 0.1
 --- !u!1 &1790086158645289445
 GameObject:
   m_ObjectHideFlags: 0

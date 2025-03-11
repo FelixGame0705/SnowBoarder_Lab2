@@ -9,23 +9,30 @@ public class ScoreManager : MonoBehaviour
     private int score = 0;
     private int comboCount = 0;
     private float multiplier = 1.0f;
-    [SerializeField] float comboResetTime = 2.0f;
+
+    [SerializeField]
+    float comboResetTime = 2.0f;
     private float comboTimer = 0f;
 
     // Thời gian fade chung
-    [SerializeField] float fadeTime = 1f;
+    [SerializeField]
+    float fadeTime = 1f;
 
     // Text hiển thị tổng điểm
-    [SerializeField] TextMeshProUGUI textMeshProTotalScore;
+    [SerializeField]
+    TextMeshProUGUI textMeshProTotalScore;
 
     // Text hiển thị điểm combo (cộng dồn trick)
-    [SerializeField] TextMeshProUGUI textMeshProUGUICombo;
+    [SerializeField]
+    TextMeshProUGUI textMeshProUGUICombo;
 
     // Text hiển thị điểm khi nhặt item
-    [SerializeField] TextMeshProUGUI textMeshProUGUIItem;
+    [SerializeField]
+    TextMeshProUGUI textMeshProUGUIItem;
 
     // Text hiển thị điểm khi nhặt item
-    [SerializeField] TextMeshProUGUI textMeshProUGUIScoreRound;
+    [SerializeField]
+    TextMeshProUGUI textMeshProUGUIScoreRound;
 
     // Dùng để hiển thị cộng dồn combo
     private int comboScoreAccumulated = 0;
@@ -38,8 +45,10 @@ public class ScoreManager : MonoBehaviour
 
     void Awake()
     {
-        if (Instance == null) Instance = this;
-        else Destroy(gameObject);
+        if (Instance == null)
+            Instance = this;
+        else
+            Destroy(gameObject);
 
         UpdateScoreUI();
     }

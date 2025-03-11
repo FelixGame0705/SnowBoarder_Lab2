@@ -308,7 +308,14 @@ public class PlayerController : MonoBehaviour
         if (collision.CompareTag("Peguin") && boostController != null)
         {
             peguin.SetActive(true);
-            boostController.AddBoostEnergy(25f);
+            boostController.AddBoostEnergy(100f);
+            audioSource.PlayOneShot(pickItemSound);
+            collision.gameObject.SetActive(false);
+        }
+
+        if (collision.CompareTag("EnergyItem"))
+        {
+            boostController.AddBoostEnergy(10f);
             audioSource.PlayOneShot(pickItemSound);
             collision.gameObject.SetActive(false);
         }

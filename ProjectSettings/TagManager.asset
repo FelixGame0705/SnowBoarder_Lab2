@@ -11,6 +11,7 @@ TagManager:
   - Peguin
   - ObstacleEdge
   - CoreObstacle
+  - EnergyItem
   layers:
   - Default
   - TransparentFX

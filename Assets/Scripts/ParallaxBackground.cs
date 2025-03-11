@@ -24,7 +24,8 @@ public class ParallaxBackground : MonoBehaviour
         if (target == null)
         {
             Debug.LogError("Target for parallax is not assigned!", this);
-            enabled = false;
+            target = FindObjectOfType<PlayerController>().transform;
+            //enabled = false;
             return;
         }
 

@@ -99,6 +99,7 @@ GameObject:
   - component: {fileID: 7496160937724164323}
   - component: {fileID: 5737803019801437551}
   - component: {fileID: 1660396132200687966}
+  - component: {fileID: 1523862775206296986}
   m_Layer: 0
   m_Name: Finish Line
   m_TagString: Untagged
@@ -184,6 +185,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loadDelay: 1
   finishEffect: {fileID: 4845323415592817212}
+  winMenu: {fileID: 0}
+  _saveController: {fileID: 1523862775206296986}
+  nameScene: 
+  _scoreManager: {fileID: 0}
 --- !u!82 &1660396132200687966
 AudioSource:
   m_ObjectHideFlags: 0
@@ -194,7 +199,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b71ce8f14699ac44e914948bd8f2c239, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: b71ce8f14699ac44e914948bd8f2c239, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.499
@@ -281,6 +286,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1523862775206296986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3275148068848322834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea6790970021867438076370dd9a9c35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4022462418567677508
 GameObject:
   m_ObjectHideFlags: 0
